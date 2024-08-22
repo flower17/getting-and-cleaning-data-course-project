@@ -1,0 +1,136 @@
+Code book
+
+
+activity_label - one of six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) that each person performed
+
+person_id - id of a person who performed activities (30 people took part in performing activities, each performed 6 activities)
+
+Mean value calculated for body acceleration signals in 3 axis (X, Y, Z)
+t_body_acc_mean_x
+t_body_acc_mean_y
+t_body_acc_mean_z
+
+Standard deviation calculated for body acceleration signals in 3 axis (X, Y, Z)
+t_body_acc_std_x
+t_body_acc_std_y
+t_body_acc_std_z
+
+Mean value calculated for gravity acceleration signals in 3 axis (X, Y, Z)
+t_gravity_acc_mean_x
+t_gravity_acc_mean_y
+t_gravity_acc_mean_z
+
+Standard deviation calculated for gravity acceleration signals in 3 axis (X, Y, Z)
+t_gravity_acc_std_x
+t_gravity_acc_std_y
+t_gravity_acc_std_z
+
+Body linear acceleration and angular velocity were derived in time to obtain respective Jerk signals in 3 axis (X, Y, Z), then the mean for each of those calculated:
+t_body_acc_jerk_mean_x
+t_body_acc_jerk_mean_y
+t_body_acc_jerk_mean_z
+
+And standard deviation:
+t_body_acc_jerk_std_x
+t_body_acc_jerk_std_y
+t_body_acc_jerk_std_z
+
+Mean value calculated for body gyroscope 3-axial raw signal:
+t_body_gyro_mean_x
+t_body_gyro_mean_y
+t_body_gyro_mean_z
+
+Standard deviation value calculated for body gyroscope 3-axial raw signal:
+t_body_gyro_std_x
+t_body_gyro_std_y
+t_body_gyro_std_z
+
+Body linear acceleration and angular velocity were derived in time to obtain Jerk signals
+tBodyAccJerk-XYZ, tBodyGyroJerk-XYZ 
+
+Then mean value caclucated:
+t_body_gyro_jerk_mean_x
+t_body_gyro_jerk_mean_y
+t_body_gyro_jerk_mean_z
+
+And standard deviation:
+t_body_gyro_jerk_std_x
+t_body_gyro_jerk_std_y
+t_body_gyro_jerk_std_z
+
+Magnitude of these three-dimensional signals were calculated using the Euclidean norm.
+Then mean and standard deviation values were calculated:
+t_body_acc_mag_mean
+t_body_acc_mag_std
+t_gravity_acc_mag_mean
+t_gravity_acc_mag_std
+t_body_acc_jerk_mag_mean
+t_body_acc_jerk_mag_std
+t_body_gyro_mag_mean
+t_body_gyro_mag_std
+t_body_gyro_jerk_mag_mean
+t_body_gyro_jerk_mag_std
+
+
+Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+The following variables contain mean and standard deviation values for the respective variables:
+f_body_acc_mean_x
+f_body_acc_mean_y
+f_body_acc_mean_z
+f_body_acc_std_x
+f_body_acc_std_y
+f_body_acc_std_z
+f_body_acc_mean_freq_x
+f_body_acc_mean_freq_y
+f_body_acc_mean_freq_z
+f_body_acc_jerk_mean_x
+f_body_acc_jerk_mean_y
+f_body_acc_jerk_mean_z
+f_body_acc_jerk_std_x
+f_body_acc_jerk_std_y
+f_body_acc_jerk_std_z
+f_body_acc_jerk_mean_freq_x
+f_body_acc_jerk_mean_freq_y
+f_body_acc_jerk_mean_freq_z
+f_body_gyro_mean_x
+f_body_gyro_mean_y
+f_body_gyro_mean_z
+f_body_gyro_std_x
+f_body_gyro_std_y
+f_body_gyro_std_z
+f_body_gyro_mean_freq_x
+f_body_gyro_mean_freq_y
+f_body_gyro_mean_freq_z
+f_body_acc_mag_mean
+f_body_acc_mag_std
+f_body_acc_mag_mean_freq
+f_body_body_acc_jerk_mag_mean
+f_body_body_acc_jerk_mag_std
+f_body_body_acc_jerk_mag_mean_freq
+f_body_body_gyro_mag_mean
+f_body_body_gyro_mag_std
+f_body_body_gyro_mag_mean_freq
+f_body_body_gyro_jerk_mag_mean
+f_body_body_gyro_jerk_mag_std
+f_body_body_gyro_jerk_mag_mean_freq
+
+Mean values calculated fo the angle between two vectors:
+angle_t_body_acc_mean_gravity
+angle_t_body_acc_jerk_mean_gravity_mean
+angle_t_body_gyro_mean_gravity_mean
+angle_t_body_gyro_jerk_mean_gravity_mean
+angle_x_gravity_mean
+angle_y_gravity_mean
+angle_z_gravity_mean
+
+
+
+- The units used for the accelerations (total and body) are 'g's (gravity of earth -> 9.80665 m/seg2).
+- The gyroscope units are rad/seg.
+
+Tidy dataset 'groupedHarData.txt' contains 180 rows - mean value for each variable for each activity (6) and person (30) who performed the activity.
+
